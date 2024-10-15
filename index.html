@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="bt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Listas e Formulários em HTML</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: rgb(161, 31, 179);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><em>Minha Página</em></h1>
+      <nav>
+        <ul>
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#formulario">Formulário</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="listas">
+        <h1><em>Listas:</em></h1>
+        <p>Organização de conteúdo utilizando elementos semânticos do HTML.</p>
+        <h3>Lista não ordenada:</h3>
+        <ul>
+          <li>Charmander</li>
+          <li>Bulbassauro</li>
+          <li>Squirle</li>
+          <li>Pikachu</li>
+          <li>Mew</li>
+        </ul>
+        <h3>Lista ordenada:</h3>
+        <ol>
+          <li>Messi</li>
+          <li>Soares</li>
+          <li>Neymar</li>
+          <li>Ronaldinho</li>
+          <li>Eto o</li>
+        </ol>
+      </section>
+      <h1><em>Formulário:</em></h1>
+
+      <section id="formulario">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required /><br /><br />
+            <label for="senha">Senha:</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              required
+            /><br /><br />
+            <label>Gênero:</label><br />
+            <input
+              type="radio"
+              id="masculino"
+              name="genero"
+              value="masculino"
+            />
+            <label for="masculino">Masculino</label><br />
+            <input type="radio" id="feminino" name="genero" value="feminino" />
+            <label for="feminino">Feminino</label><br /><br />
+            <label for="interesses">Interesses:</label><br />
+            <input type="checkbox" id="css" name="interesses" value="css" />
+            <label for="css">CSS</label><br />
+            <input type="checkbox" id="Html5" name="interesses" value="Html5" />
+            <label for="Html5">HTML5</label><br /><br />
+            <label for="nacionalidade">Nacionalidade:</label>
+            <select id="nacionalidade" name="nacionalidade">
+              <option value="brasil">Brasil</option>
+              <option value="portugal">Portugal</option>
+              <option value="angola">Angola</option>
+              <option value="outro">Outro</option></select
+            ><br /><br />
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <aside>
+      <h3>Informações Adicionais</h3>
+      <p>Veja e reveja nossa página.</p>
+      <a href="#listas">Link relacionado</a>
+    </aside>
+    <footer>
+      <div id="contato">
+        <p>
+          Copyright&copy; 2024 Desafio avançado de html e css. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
